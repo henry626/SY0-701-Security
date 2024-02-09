@@ -1,1 +1,27 @@
+2.1 Threat Actors
+
+
+2.2 Common Threat Vectors, Phishing, Impersonation, Watering Hole Attacks, Social Engineering Attacks
+
+
+2.3 Memory Injections, Buffer Overflows, Race Conditions, Malicious Updates, OS Vulnerabilities, SQL Injection, Cross-site Scripting, Hardware Vulnerabilities,
+
+
+
+2.3 Virtualization Vulnerabilities, Cloud-specific Vulnerabilities, Supply Chain Vulnerabilities, Misconfiguration Vulnerabilities, Mobile Device Vulnerabilities, Zero Day
+
+
+
+2.4 An Overview of Malware, Viruses and Worms, Spyware and Bloatware, Other Malware Types, Physical Attacks, Denial of Service, DNS Attacks, Wireless Attacks
+
+
+
+2.4 On-path Attacks, Replay Attacks, Malicious Code, Application Attacks, Cryptographic Attacks, Password Attacks, Indicators of Compromise, Segmentation and Access Control
+
+
+
+
+2.5 Mitigation Techniques, Hardening Techniques, Cloud Infrastructures, Network Infrastructure Concepts
+
+
 
