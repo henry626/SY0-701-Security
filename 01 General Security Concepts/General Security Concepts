@@ -18,8 +18,12 @@ General Security Concepts - 12%
   
 
 1.2 The CIA Triad: Non-repudiation, Authentication, Authorization and Accounting, Gap Analysis, Zero Trust, Physical Security, Deception and Disruption
+  CIA or AIC Triad refers to Confidentiality, Integrity, and Availability.
+  Confidentiality - prevent disclosure of info to unauthorized users. Use Encryption and Decryption. Access controls restriction. Two-factor authentication.
+  Integrity - Messages can't be modified without detection. Hashing data. Digital signatures. Certificates. Non-repudiation provides proof of integrity.
+  Availability - Systems and networks must be running at all times. Redundancy, fault tolerance, patching to close security holes and stability.
 
-
+  Non-repuudiation: 
 
 1.3 Change Management, Technical Change Management
 
