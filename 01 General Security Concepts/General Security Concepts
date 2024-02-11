@@ -8,14 +8,12 @@
   Preventive control types: block access, firewall rules, security policy, guard shack checks, door locks
   Deterrent control types: discourage an intrusion, application splash screens, the threat of demotion, reception desk, and warning signs
   Detective control types: identify and log an intrusion, collect and review logs, login reports, regularly patrol the property, and motion detectors
-  Corrective control types: after an event, reverse the impact and minimize downtime. Restoring backups, policies for reporting issues, contact law enforcement, and fire extinguisher.
-  Compensating control types: Control using other means temporarily. Use firewall to block or patch the troubled app, separation of duties, guard duties, and generator for power outage.
+  Corrective control types: After an event, reverse the impact and minimize downtime. Restoring backups, policies for reporting issues, contact law enforcement, and fire extinguisher.
+  Compensating control types: Control using other means temporarily. Firewall to block or patch the troubled app, separation of duties, guard duties, and generator for power outage.
   Directive control types: display security compliance. Put sensitive files in protected folders, compliance policies and procedures, train users, sign: "Authorized only."
 
+  [View the Control Types.pdf]
   
-  
-
-
 
 1.2 The CIA Triad: Non-repudiation, Authentication, Authorization and Accounting, Gap Analysis, Zero Trust, Physical Security, Deception and Disruption
 
