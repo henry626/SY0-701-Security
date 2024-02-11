@@ -1,4 +1,19 @@
 1.1 Security Controls
+  - Prevent, minimize, and limit the damage
+  Technical controls: Controls implemented using systems, OS controls, Firewalls and anti-virus
+  Managerial controls: Administrative controls with security design and implementation, security policies, and standard operating procedures
+  Operational controls: controls implemented by people instead of systems, security guards, and awareness programs
+  Physical controls: limit physical access, guard shack, fences, locks, and badge readers
+
+  Preventive control types: block access, firewall rules, security policy, guard shack checks, door locks
+  Deterrent control types: discourage an intrusion, application splash screens, the threat of demotion, reception desk, and warning signs
+  Detective control types: identify and log an intrusion, collect and review logs, login reports, regularly patrol the property, and motion detectors
+  Corrective control types: after an event, reverse the impact and minimize downtime. Restoring backups, policies for reporting issues, contact law enforcement, and fire extinguisher.
+  Compensating control types: Control using other means temporarily. Use firewall to block or patch the troubled app, separation of duties, guard duties, and generator for power outage.
+  Directive control types: display security compliance. Put sensitive files in protected folders, compliance policies and procedures, train users, sign: "Authorized only."
+
+  
+  
 
 
 
