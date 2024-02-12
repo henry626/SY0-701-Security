@@ -81,13 +81,22 @@ General Security Concepts - 12%
   
 
 1.4 Public Key Infrastructure, Encrypting Data, Key Exchange, Encryption Technologies, Obfuscation, Hashing and Digital Signatures, Blockchain Technology, Certificates
-  Public Key Infrastructure (PKI) -  
-  Encrypting Data - 
+  Public Key Infrastructure (PKI) -  Policies and procedures to create, distribute, manage, store and revoke digital certificates.
+  Symmetric encryption - A single and shared key use for both encryption and decryption. Fast but doesn't scale very well.
+  Asymmetric encryption involves two mathematically related keys (private and public keys). The private key is the only key that can decrypt data encrypted with the public key.
+
+  Encrypting Data - Protect data on storage devices. Full-disk, folders, or a single file. BitLocker, FileVault, or Windows EFS.
+
   Key Exchange - 
+
   Encrypting Technologies - 
+
   Obfuscation - 
+
   Hashing and Digital Signatures - 
+
   Blockchain Technology - 
+
   Certificates - 
 
 
