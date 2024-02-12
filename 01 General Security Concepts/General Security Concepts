@@ -23,9 +23,71 @@ General Security Concepts - 12%
   Integrity - Messages can't be modified without detection. Hashing data. Digital signatures. Certificates. Non-repudiation provides proof of integrity.
   Availability - Systems and networks must be running at all times. Redundancy, fault tolerance, patching to close security holes and stability.
 
-  Non-repuudiation: 
+  Non-repudiation: proof of integrity using hash for cryptography, proof of origin by authenticating with the private key through encryption.
+      plaintext -> hash -> encryption (private key).      decryption -> hash
 
-1.3 Change Management, Technical Change Management
+  AAA: Authentication, Authorization, and Accounting
+  Authentication - prove user identity with User/password
+  Authorization -  grant access based on identification and authentication,
+  Accounting - Login time, data sent and received, and logout time
 
+  Authenticating systems often use digitally signed certificates to assign to authorized devices.
+  Certificate authentication - An org has a trusted Certificate Authority (CA) to create and verify digitally signed certificates.  
+  Authorization models - create abstract groups to assign users and services <=> data and applications.
+
+  Gap analysis - Perform research and review to determine where we are and where we want to be.
+  Choosing the framework (i.e., NIST 800-171rev2 or ISO/IEC 27001) for the organization's formal standards.
+  Evaluate people and processes; compare and contrast existing systems.
+
+  Zero Trust - Implies nothing is inherently trusted; multi-factor authentication, encryption, system permissions, firewalls, monitoring and analytics.
+  Split the network info functional planes to define security policy for each: physical assets, virtual assets, and cloud assets.
+  Data plane - (switches, routers, firewalls) processing, forwarding, trunking, encrypting, NAT frames and packets.
+  Control plane - manages the actions of the data plane; policies, rules, routing tables, session tables, NAT tables.
+
+  Adaptive identity - consider the requested resources to apply multiple risk indicators to increase the authentication factor.
+  Threat scope reduction - decrease the number of possible entry points
+  Policy-driven access control - combining adaptive identity with a predefined set of rules
+  Security zones - trusted vs untrusted zones; internal vs external network; 
+  Policy enforcement point (PEP) - policy decision point, policy engine, policy admin
+
+  Physical Security - (i.e., Barricades/Bollards) - prevent access; channel traffic and access point; Warning signs.
+  Access control vestibules (i.e., doors/fences) - designed to lock/unlock access to facilities
+  Surveillance - CCTV, security guard, badge access, well lighting, sensors (infrared - motion, pressure - floor and windows, microwave - movements, ultrasonic - sound waves)
+
+
+  Deception and Disruption - prevent bad actors from attacking your systems.
+  Honeypots - attract bad guys as traps, virtual worlds to explore, cat & mouse game with attackers; open source for download.
+  Honeynets (servers, routers, workstations cluster)
+  Honeyfiles (fake files like password.txt)
+  Honeytokens (traceable data - API credentials, fake email addresses)
+
+
+1.3 Change Management, Technical Change Management - A formal process for upgrading/rolling back software changes, including how to make changes, their frequency, and clear policies.
+  Change approval process - request forms, define the purpose, the scope, the affected resources, schedule date & time, and manager approval. 
+  Ownership - An individual or entity needs to make changes and own the process; The owner manages the updates and ensures the process is followed.
+  i.e., Address label printers need upgrading; the Shipping dept owns the process; IT handles the actual change.
+  Stakeholders - who are impacted by the change and may not be obvious. 
+  i.e., Shipping labels: shipping dept; accounting reports; product delivery timeframes; revenue recognition (CEO vis ibility)
+  Impact analysis - risk value (fix or not fix the issue, breaks something else, or data corruption); not making change (security vulnerability, downtime, and availability)
+  Test results - Use the sandbox testing environment before making changes to production; confirm the backout plan, such as backup systems.
+
+  Allow list vs. Deny list: nothing runs unless it's approved, very restrictive; anti-virus, anti-malware.
+  Restricted activities: The scope of a change is important; do not change something outside of the scope. Expand the change only if necessary. Determine the next steps.
+  Downtime - When the services & resources are unavailable, switch to a secondary system; the goal is to minimize downtime.
+  Restarts system, services, or applications
+  Legacy applications - beware that they may not be supported anymore, fear of the unknown.
+  Dependencies - to update A, it needs to update B. Dependencies may be across platforms.
+  Documentation - track Version control
+  
 
 1.4 Public Key Infrastructure, Encrypting Data, Key Exchange, Encryption Technologies, Obfuscation, Hashing and Digital Signatures, Blockchain Technology, Certificates
+  Public Key Infrastructure (PKI) -  
+  Encrypting Data - 
+  Key Exchange - 
+  Encrypting Technologies - 
+  Obfuscation - 
+  Hashing and Digital Signatures - 
+  Blockchain Technology - 
+  Certificates - 
+
+
