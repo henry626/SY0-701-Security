@@ -19,9 +19,9 @@ General Security Concepts - 12%
 
 1.2 The CIA Triad: Non-repudiation, Authentication, Authorization and Accounting, Gap Analysis, Zero Trust, Physical Security, Deception and Disruption
   CIA or AIC Triad refers to Confidentiality, Integrity, and Availability.
-  Confidentiality - prevent disclosure of info to unauthorized users. Use Encryption and Decryption. Access controls restriction. Two-factor authentication.
-  Integrity - Messages can't be modified without detection. Hashing data. Digital signatures. Certificates. Non-repudiation provides proof of integrity.
-  Availability - Systems and networks must be running at all times. Redundancy, fault tolerance, patching to close security holes and stability.
+  Confidentiality: To prevent the disclosure of information to unauthorized users, use encryption and Decryption, restrict access controls, and use two-factor authentication.
+  Integrity - Messages can't be modified without detection. Hashing data, digital signatures, and certificates provide proof of integrity, as does non-repudiation.
+  Availability - Systems and networks must be running at all times. This includes redundancy, fault tolerance, patching to close security holes, and stability.
 
   Non-repudiation: proof of integrity using hash for cryptography, proof of origin by authenticating with the private key through encryption.
       plaintext -> hash -> encryption (private key).      decryption -> hash
@@ -67,9 +67,9 @@ General Security Concepts - 12%
   Ownership - An individual or entity needs to make changes and own the process; The owner manages the updates and ensures the process is followed.
   i.e., Address label printers need upgrading; the Shipping dept owns the process; IT handles the actual change.
   Stakeholders - who are impacted by the change and may not be obvious. 
-  i.e., Shipping labels: shipping dept; accounting reports; product delivery timeframes; revenue recognition (CEO vis ibility)
+  i.e., Shipping labels: shipping dept; accounting reports; product delivery timeframes; revenue recognition (CEO visibility)
   Impact analysis - risk value (fix or not fix the issue, breaks something else, or data corruption); not making change (security vulnerability, downtime, and availability)
-  Test results - Use the sandbox testing environment before making changes to production; confirm the backout plan, such as backup systems.
+  Test results: Use the sandbox testing environment before making changes to production, and confirm the backout plan, such as backup systems.
 
   Allow list vs. Deny list: nothing runs unless it's approved, very restrictive; anti-virus, anti-malware.
   Restricted activities: The scope of a change is important; do not change something outside of the scope. Expand the change only if necessary. Determine the next steps.
@@ -81,21 +81,34 @@ General Security Concepts - 12%
   
 
 1.4 Public Key Infrastructure, Encrypting Data, Key Exchange, Encryption Technologies, Obfuscation, Hashing and Digital Signatures, Blockchain Technology, Certificates
-  Public Key Infrastructure (PKI) -  Policies and procedures to create, distribute, manage, store and revoke digital certificates.
-  Symmetric encryption - A single and shared key use for both encryption and decryption. Fast but doesn't scale very well.
+  Public Key Infrastructure (PKI) is the policies and procedures for creating, distributing, managing, storing, and revoking digital certificates.
+  Symmetric encryption uses a single, shared key for both encryption and decryption. It's fast but doesn't scale very well.
   Asymmetric encryption involves two mathematically related keys (private and public keys). The private key is the only key that can decrypt data encrypted with the public key.
 
-  Encrypting Data - Protect data on storage devices. Full-disk, folders, or a single file. BitLocker, FileVault, or Windows EFS.
+  Encrypting Data - Protect data on storage devices. Full disk, folders, or a single file. BitLocker, FileVault, or Windows EFS.
 
-  Key Exchange - 
+  Key Exchange: transferring keys is a logistical challenge. Out-of-band (telephone or in-person) vs. in-band (over the network) key exchange.
+  Real-time encryption/decryption is needed for fast security. Share a symmetric session key using asymmetric encryption (session key).
+  Session keys are temporary, change often, and need to be unpredictable.
 
-  Encrypting Technologies - 
+  Encrypting Technologies - Trusted Platform Module (TPM): Cryptography hardware such as a cryptographic processor for key generators; 
+  Persistent memory with unique keys burned during manufacturing; Versatile memory to store keys securely with BitLocker or password protected.
+  Hardware Security Module (HSM): This is used in large environments (clusters or redundant power) to store thousands of cryptographic keys, backup keys, and cryptographic accelerators.
+  Key management system: Services are everywhere. Manage all keys from a centralized manager. Manage all keys from one console.
+  Secure enclave: hardware processor with real-time memory encryption to securely store data. 
 
-  Obfuscation - 
+  Obfuscation - The process of making something unclear and hiding info in plain sight. EX: Steganography. Picture, Audio, and Video steganography.
+  Tokenization is the process of replacing sensitive data with a non-sensitive placeholder, which is common with credit card processing. This isn't encrypted or hashed.
+  Data masking is the process of hiding some of the original data and protecting PII. For example, **** 1234 only shows the last four digits of the number's CC or SS.
 
-  Hashing and Digital Signatures - 
+  Hashing and Digital Signatures - Hashes represent data as a string of text; they are one-way trips that cannot be recovered or reversed.
+  Hash functions should be unique and do not have collision problems. MD5 is a hash with collision.
+  Hash is commonly used to verify downloaded files or store passwords. For example, store a salted hash for the password.
+  Salted hash is when random data (salt) is added to a password when hashing. The salt is stored with the password. (password + gsEVx) = hash string.
+  Rainbow tables (mapping of all inputs to their hash equivalent) won't work with salted hashes due to added data (salt).
+  Digital signatures provide integrity, authentication, and non-repudiation. They are signed with a private key and verified with the public key.
 
-  Blockchain Technology - 
+  Blockchain Technology - distributed ledger to keep track of transactions; Everyone maintains a copy of the ledger; Used in payment processing, supply chain, or digital voting.
 
   Certificates - 
 
