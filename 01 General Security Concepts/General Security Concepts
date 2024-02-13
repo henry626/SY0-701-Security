@@ -24,7 +24,7 @@ General Security Concepts - 12%
   Availability - Systems and networks must be running at all times. This includes redundancy, fault tolerance, patching to close security holes, and stability.
 
   Non-repudiation: proof of integrity using hash for cryptography, proof of origin by authenticating with the private key through encryption.
-      plaintext -> hash -> encryption (private key).      decryption -> hash
+      Plaintext -> hash -> encryption (private key).      decryption -> hash
 
   AAA: Authentication, Authorization, and Accounting
   Authentication - prove user identity with User/password
@@ -71,7 +71,7 @@ General Security Concepts - 12%
   Impact analysis - risk value (fix or not fix the issue, breaks something else, or data corruption); not making change (security vulnerability, downtime, and availability)
   Test results: Use the sandbox testing environment before making changes to production, and confirm the backout plan, such as backup systems.
 
-  Allow list vs. Deny list: nothing runs unless it's approved, very restrictive; anti-virus, anti-malware.
+  Allow list vs. Deny list: nothing runs unless approved, very restrictive; anti-virus, anti-malware.
   Restricted activities: The scope of a change is important; do not change something outside of the scope. Expand the change only if necessary. Determine the next steps.
   Downtime - When the services & resources are unavailable, switch to a secondary system; the goal is to minimize downtime.
   Restarts system, services, or applications
@@ -85,7 +85,12 @@ General Security Concepts - 12%
   Symmetric encryption uses a single, shared key for both encryption and decryption. It's fast but doesn't scale very well.
   Asymmetric encryption involves two mathematically related keys (private and public keys). The private key is the only key that can decrypt data encrypted with the public key.
 
-  Encrypting Data - Protect data on storage devices. Full disk, folders, or a single file. BitLocker, FileVault, or Windows EFS.
+  Encrypting Data - Protect data on storage devices by encrypting a full disk, folders, or a single file. Use BitLocker, FileVault, or Windows EFS.
+  Database encryption to protect stored data with transparent encryption or record-level encryption.
+  Transport encryption by protecting data traversing the network; Encrypting in the app (EX, browsers use HTTPS); VPN (Virtual private network) uses SSL/TLS or IPsec.
+  Encryption algorithms must be agreed upon by both sides (server and client). Consider security level, speed, complexity of implementation, etc.
+  Cryptographic keys - larger length prevents brute-force attacks. Symmetric encryption and Asymmetric encryption.
+  Key Stretching (key strengthening) involves making a weak key stronger by performing multiple processes. The password is hashed. The hash of the password is hashed.
 
   Key Exchange: transferring keys is a logistical challenge. Out-of-band (telephone or in-person) vs. in-band (over the network) key exchange.
   Real-time encryption/decryption is needed for fast security. Share a symmetric session key using asymmetric encryption (session key).
@@ -110,6 +115,15 @@ General Security Concepts - 12%
 
   Blockchain Technology - distributed ledger to keep track of transactions; Everyone maintains a copy of the ledger; Used in payment processing, supply chain, or digital voting.
 
-  Certificates - 
+  Certificates bind a public key with a digital signature. Certificate Authorities (CA) can add trust to a digital signature. 
+  X.509 is a standard format for digital certificates.
+  The root of trust is a trusted component provided by a third party through hardware/software/firmware.
+  Certificate signing requests (CSR) is a process to request a CA to validate and sign the digital certificate for an app or website.
+  Certificates can also be built in-house through Windows Certificate Services for internal web servers. Self-signed certificates.
+  Certificate Revocation List (CRL) is maintained by the CA of all bad or decommissioned certificates.
+  Online Certificate Status Protocol (OCSP) status is "stapled" into the SSL/TLS handshake to efficiently confirm the status of the certificate (digitally signed by the CA).
+  
+  
+
 
 
