@@ -1,25 +1,48 @@
 4 Security Program Management and Oversight - 20%
 
 4.1 Secure Baselines, Hardening Targets, Securing Wireless and Mobile, Wireless Security Settings, Application Security
-
+Secure Baselines -
+Hardening Targets - 
+Securing Wireless and Mobile -
+Wireless Security Settings -
+Application Security -
 
 
 4.2 Asset Management, 
 
 
 4.3 Vulnerability Scanning, Threat Intelligence, Penetration Testing, Analyzing Vulnerabilities, Vulnerability Remediation
+Vulnerability Scanning -
+Threat Intelligence -
+Penetration Testing -
+Analyzing Vulnerabilities -
+Vulnerability Remediation
 
 
 
 4.4 Security Monitoring, Security Tools, 
+Security Monitoring -
+Security Tools -
 
 
 
 4.5 Firewalls, Web Filtering, Operating System Security, Secure Protocols, Email Security, Monitoring Data, Endpoint Security
+Firewalls -
+Web Filtering -
+Operating System Security -
+Secure Protocols -
+Email Security -
+Monitoring Data -
+Endpoint Security -
+
 
 
 
 4.6 Identity and Assess Management, Access Controls, Multifactor Authentication, Password Security
+Identity and Assets Management -
+Access Controls -
+Multifactor Authentication -
+Password Security -
 
 
 
@@ -28,6 +51,9 @@
 
 
 4.8 Incident Response, Incident Planning, Digital Forensics
+Incident Response -
+Incident Planning -
+Digital Forensics -
 
 
 4.9 Log Data
