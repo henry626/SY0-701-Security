@@ -1,12 +1,29 @@
 5 Threats, Vulnerabilities, and Mitigations - 22%
 
 5.1 Security Policies, Security Standards, Security Procedures, Security Considerations, Data Roles and Responsibilities
-Security Policies -
-Security Standards -
-Security Procedures -
-Security Considerations -
-Data Roles and Responsibilities -
+Security Policies should include high-level strategies and detailed goals to explain how, what, and why.
+Policies contain compliance requirements, detailed procedures, and a list of roles and responsibilities.
+Acceptable use policies (AUP) explain an acceptable use of company assets and legal liability.
+Policies enable continuous business activities, a disaster recovery plan, handling different security incidents, and managing and responding to them.
+NIST SP800-61 is the handling guide from the National Institute of Standards of Technology - The Incident Response Lifecycle.
 
+Security Standards - A formal definition for using security technologies and processes.
+There are two notable standards: ISO (International Organization for Standardization) and NIST (National Institute of Standards of Technology).
+Policies for secure passwords for no local accounts follow the Lightweight Directory Access Protocol (LDAP).
+Security standards to control access to data for individuals or groups. Security issues such as expiration, contract renewal, etc.
+Policies for physical controls include doors, building access, and property security. Employees vs. visitors.
+
+Security Procedures include change management, onboarding, offboarding, playbook for scenarios, monitoring revision, etc.
+Change management requires formal documentation to avoid downtime, confusion, and mistakes. Documentation includes scope of change, analysis of risk, 
+  plan, management and end-user approvals, backout/rollback plan, and changes log.
+Onboarding/Offboarding for new/retired accounts, workstations, and the AUP (acceptable use policies).
+Monitoring and revising to constantly changing IT landscapes for new security concerns and threats.
+
+Security Considerations should focus on regulations and legal requirements.
+Regulatory requires retaining applications, data, and logs for a certain period of time. Sarbanes-Oxly Act (SOX) or HIPAA (health care)
+Legal responsibilities include retaining data, reporting illegal activities, and having jurisdiction over cloud computing.
+
+Data Roles and Responsibilities for Data Owner, Data Roles, Data Controller, Data Processor. 
 
 
 5.2 Risk Management, Risk Analysis, Risk Management Strategies, Business Impact Analysis
