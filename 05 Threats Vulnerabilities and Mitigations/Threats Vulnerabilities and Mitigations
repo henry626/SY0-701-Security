@@ -20,16 +20,31 @@ Onboarding/Offboarding for new/retired accounts, workstations, and the AUP (acce
 Monitoring and revising to constantly changing IT landscapes for new security concerns and threats.
 
 Security Considerations should focus on regulations and legal requirements.
-Regulatory requires retaining applications, data, and logs for a certain period of time. Sarbanes-Oxly Act (SOX) or HIPAA (health care)
+Regulatory requires retaining applications, data, and logs for a certain period of time. Sarbanes-Oxley Act (SOX) or HIPAA (health care)
 Legal responsibilities include retaining data, reporting illegal activities, and having jurisdiction over cloud computing.
 
 Data Roles and Responsibilities for Data Owner, Data Roles, Data Controller, Data Processor. 
 
 
 5.2 Risk Management, Risk Analysis, Risk Management Strategies, Business Impact Analysis
-Risk Management -
-Risk Analysis -
+Risk Management - Manage potential risk, qualify internal and external threats, plan for contingencies.
+Risk assessment can be one-time or continuous assessments for changing environments.
+Ad hoc assessment is a one-time assessment of a specific situation or threat. The risk is not investigated again in the future.
+Recurring assessments occur on standard intervals and internally mandated risk assessments.
+
+Risk Analysis - qualitative risk assessment,
+Qualitative risk assessment identifies significant risk factors for various threats (legacy Windows clients, untrained staff, No anti-virus software)
+Risk assessment includes impact (low-high), rate of occurrence, cost of controls and overall risk.
+Quantitative risk assessment identifies the annualized rate of occurrence, asset value, and exposure factor. It compares single loss expectancy (SLE) to Annualized lost expectancy (ALE). 
+Impact: life, property, safety, and finance.
+Risk likelihood is a qualitative measurement of risk.
+Risk probability is a quantitative measurement of risk.
+Risk appetite describes a level of risk acceptable to the company.
+Risk tolerance is an acceptable variance from the risk appetite.
+The risk register documents various potential risks associated with each step and monitors the results. Includes risk indicators, risk owners, and risk threshold.
+
 Risk Management Strategies -
+
 Business Impact Analysis -
 
 
