@@ -41,9 +41,13 @@ Risk likelihood is a qualitative measurement of risk.
 Risk probability is a quantitative measurement of risk.
 Risk appetite describes a level of risk acceptable to the company.
 Risk tolerance is an acceptable variance from the risk appetite.
-The risk register documents various potential risks associated with each step and monitors the results. Includes risk indicators, risk owners, and risk threshold.
+The risk register documents various potential risks associated with each step and monitors the results. It includes risk indicators, risk owners, and risk thresholds.
 
-Risk Management Strategies -
+Risk Management Strategies include avoiding, accepting, or deferring to another party.
+Transfer moves the risk to another party, such as cybersecurity insurance or using a cloud-based network.
+Accepting the risk as a course of business decision. Accept with exemption or exception.
+Avoid the high-risk activity or mitigate the risk level.
+Risk reporting identifies risks and budgeting resources to handle the tasks.
 
 Business Impact Analysis -
 
