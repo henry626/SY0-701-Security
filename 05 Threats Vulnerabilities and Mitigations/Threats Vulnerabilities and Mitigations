@@ -27,14 +27,14 @@ Data Roles and Responsibilities for Data Owner, Data Roles, Data Controller, Dat
 
 
 5.2 Risk Management, Risk Analysis, Risk Management Strategies, Business Impact Analysis
-Risk Management - Manage potential risk, qualify internal and external threats, plan for contingencies.
-Risk assessment can be one-time or continuous assessments for changing environments.
+Risk Management - Manage potential risk, qualify internal and external threats, and plan for contingencies.
+Risk assessments can be one-time or continuous assessments for changing environments.
 Ad hoc assessment is a one-time assessment of a specific situation or threat. The risk is not investigated again in the future.
 Recurring assessments occur on standard intervals and internally mandated risk assessments.
 
 Risk Analysis - qualitative risk assessment,
 Qualitative risk assessment identifies significant risk factors for various threats (legacy Windows clients, untrained staff, No anti-virus software)
-Risk assessment includes impact (low-high), rate of occurrence, cost of controls and overall risk.
+Risk assessment includes impact (low-high), rate of occurrence, cost of controls, and overall risk.
 Quantitative risk assessment identifies the annualized rate of occurrence, asset value, and exposure factor. It compares single loss expectancy (SLE) to Annualized lost expectancy (ALE). 
 Impact: life, property, safety, and finance.
 Risk likelihood is a qualitative measurement of risk.
@@ -49,11 +49,23 @@ Accepting the risk as a course of business decision. Accept with exemption or ex
 Avoid the high-risk activity or mitigate the risk level.
 Risk reporting identifies risks and budgeting resources to handle the tasks.
 
-Business Impact Analysis -
-
+Business Impact Analysis includes recovery time objective, recovery point objective, mean time to repair, and mean time between failures.
+Recovery time objective (RTO) - Time to get back up and running quickly.
+Recovery point objective (RPO) - how much data loss is acceptable to bring the system back online.
+Mean time to repair (MTTR) - average time required to fix an issue
+Mean time between failures (MTBF) - the time between outages; statistically plan for possible outages.
 
 5.3 Third-party Risk Assessment, Agreement Types
-Third-party Risk Assessment -
+Third-party Risk Assessment - Categorize risk by vendor and manage the risk; share data with vendors such as cloud-based services.
+Penetration testing - simulate an attack to scan for vulnerability and to mandate compliance enforceable by legal requirements.
+Rules of engagement - documenting the types of testing and schedule such as IP address ranges, emergency contacts, in-scope and out-of-scope devices or applications.
+Right-to-audit clauses - Have a legal contract to have the option to perform a security audit to secure data sharing and outsourcing. 
+Evidence of internal audits to evaluate the effectiveness of security controls may be performed regularly as required for compliance.
+Supply chance analysis - Evaluate coordination between your company and others to produce a product or service from the supplier to the customer.
+Independent assessments - Use an outside firm with specialists in their field to analyze and provide options you may not have considered.
+Vendor selection process - Search with due diligence to investigate and verify information, financial status, background checks, and potential conflict of interest.
+Vendor monitoring - 
+
 Agreement Types -
 
 
