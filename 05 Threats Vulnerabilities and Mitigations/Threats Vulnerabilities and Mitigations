@@ -25,7 +25,6 @@ Legal responsibilities include retaining data, reporting illegal activities, and
 
 Data Roles and Responsibilities for Data Owner, Data Roles, Data Controller, Data Processor. 
 
-
 5.2 Risk Management, Risk Analysis, Risk Management Strategies, Business Impact Analysis
 Risk Management - Manage potential risk, qualify internal and external threats, and plan for contingencies.
 Risk assessments can be one-time or continuous assessments for changing environments.
@@ -96,10 +95,30 @@ Protection for data subjects also includes genetic makeup, physical characterist
 Protecting data inventory includes internal use and external use. Follow existing laws when sharing selected data.
 
 5.5 Audits and Assessments, Penetration Tests, 
-Audits and Assessments -
-Penetration Tests -
+Audits and Assessments - Cybersecurity audit to check for effectiveness of policies and procedures; find vulnerabilities. Internal or External audits.
+Internal audits - The audit committee checks for compliance and risk management. Self-assessments.
+External audits - Regulatory requirements by third parties. Examinations and assessment of records and activities.
+Attestation - Auditor's opinion of truth or accuracy of a company's security positioning. 
 
+Penetration Tests - Physical penetration and cyber penetration.
+Physical penetration - hack by physical means: modify boot process, use media bays, replace OS files.
+Assess and test physical security such as doors, windows, badge scanners, etc.
+Pentesting: The red team exploits and attacks vulnerabilities; The Blue team identifies and prevents attacks in real-time.
+Working knowledge includes known environment, partially known environment, and unknown environment (blind) tests.
+Reconnaissance - gathering a digital footprint to understand the information before the attack.
+Passive reconnaissance includes social media, websites, online forums, social engineering, dumpster diving, and business relationships.
+Active reconnaissance includes trying the doors, monitoring network traffic, ping scans, port scans, DNS queries, OS scans, and OS fingerprinting.
 
 5.6 Security Awareness, User Training
-Security Awareness -
-User Training -
+Security Awareness - Phishing campaigns, 
+Phishing campaigns include emails and website links to train employees to understand malicious attacks.
+Phishing emails contain spelling/grammatical errors, wrong domain names, and unusual attachments.
+Phishing emails should be filtered before they get to the users. Have a process to report phishing emails. Update filters regularly to catch phishing emails.
+Anomalous behavior recognition - risky behavior such as modifying hosts or OS files and uploading sensitive files. Using external USB drives or visiting malicious websites.
+Reporting and monitoring - need to be automated to track phishing click rates, password sharing, Multi-Factor Authentication (MFA) use, etc.
+Development - Create a Security Awareness team to establish a minimum awareness level, integrate compliance mandates, define metrics, etc.
+Execution - Create training materials, document success measurements, identify stakeholders, deploy training materials, and track user training efforts.
+
+User Training - Provide security awareness training before users use the network. Continue security awareness training to refresh their understanding of security concerns.
+User guidance and training - policy/handbooks to document all security requirements. Situational awareness to look for threats such as phishing links.
+
