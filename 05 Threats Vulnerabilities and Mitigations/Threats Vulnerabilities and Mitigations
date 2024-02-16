@@ -64,16 +64,36 @@ Evidence of internal audits to evaluate the effectiveness of security controls m
 Supply chance analysis - Evaluate coordination between your company and others to produce a product or service from the supplier to the customer.
 Independent assessments - Use an outside firm with specialists in their field to analyze and provide options you may not have considered.
 Vendor selection process - Search with due diligence to investigate and verify information, financial status, background checks, and potential conflict of interest.
-Vendor monitoring - 
+Vendor monitoring - Review vendor relationship: financial health check, IT security review, news, social media posts, etc.
+Use questionnaires to monitor ongoing vendor security-related questions.
 
-Agreement Types -
-
+Agreement Types - Common agreements include Service level agreements (SLA), Contracts with an Internet provider, Memorandum of understanding (MOU), Memorandum of Agreement (MOA),
+Master Service Agreement (MSA), Work Order (WO) / Statement of Work (SOW), NDA, Business Partners Agreement (BPA).
+Service Level Agreement (SLA): terms of services, uptime, response time agreement, etc.
+Contract with an Internet provider: term for unscheduled downtime, technician availability, and spare equipment on-site.
+Memorandum of understanding (MOU): states common goals, confidentiality statements, and letter of intent; not a signed contract.
+Memorandum of Agreement (MOA): a step above MOU, conditionally agreeing to the objectives, can be a legal document but may not contain legally enforceable promises.
+Master Service Agreement (MSA): Legal contract of a broad framework to cover current and future projects.
+Work Order (WO) / Statement of Work (SOW): Specific list of items to be done, used in conjunction with MSA; scope of work, location, deliverables, criteria, etc.
+Non-disclosure agreement (NDA) - confidentiality agreement to protect trade secrets and business activities; Unilateral or bilateral; formal contract. 
+Business Partners Agreement (BPA) - Owner stake, financial contract, decision-making, contingencies for the financial crisis or disaster recovery.
 
 5.4 Compliance, Privacy, 
-Compliance -
-Privacy -
+Compliance - Meeting the standard of laws, policies, and regulations; penalties include fines or incarceration; scope includes domestic or international requirements.
+Internal - Central Compliance Officers (CCO) internally monitor and report on compliance efforts; Compliance monitoring with due diligence/care.
+External - Partners or industry regulators may require annual or ongoing reporting.
+Sarbanes-Oxley Act (SOX) - Regulatory agency for public company accounting reform and investor protection act of 2002
+Health Insurance Portability and Accountability Act (HIPPA) - Healthcare standards for storing, using, and transmitting health care information.
+Gramm-Leach-Bliley Act of 1999 (GLBA) - Disclosure of privacy information from financial institutions.
+Non-compliance includes fines from $50K - $250K, one year to 10 years of prison, reputational damage, loss of license, and breach of contract. 
 
-
+Privacy laws vary from local/regional to national.
+State and local governments set privacy limits that are enforceable through licensing.
+National privacy laws such as HIPPA are enforceable through fines and prison terms.
+Global privacy laws (EX: European Union regulation) - General Data Protection Regulation are enforceable for every EU country for every individual.
+Individual names, addresses, photo email addresses, bank details, medical info, and IP Address are enforceable with privacy laws. 
+Protection for data subjects also includes genetic makeup, physical characteristics, and location data.
+Protecting data inventory includes internal use and external use. Follow existing laws when sharing selected data.
 
 5.5 Audits and Assessments, Penetration Tests, 
 Audits and Assessments -
