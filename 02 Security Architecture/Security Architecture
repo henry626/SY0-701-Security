@@ -1,7 +1,9 @@
 2 Security Architecture - 18%
 
-2.1 Threat Actors
-
+2.1 Threat Actors are malicious attackers responsible for harming the safety or security of another entity.
+  Internal/external attackers - resources/funding, level of sophistication/capability.
+  Motivations include data exfiltration, espionage, service disruption, blackmail, revenge, war, etc.
+  Nation states - external threats from governments/nations for revenge, disruption, or war; Advanced Persistent Threat (APT)
 
 2.2 Common Threat Vectors, Phishing, Impersonation, Watering Hole Attacks, Social Engineering Attacks
   Common threat vectors -
