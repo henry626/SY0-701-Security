@@ -4,17 +4,17 @@ Information security - protect the data
 Information system security - protect the devices that hold the data
 
 1.1 Security Controls: Measures are implemented to mitigate risks and protect information systems and data confidentiality, integrity, and availability.
-  Technical controls: Controls implemented using systems, OS controls, Firewalls and anti-virus
-  Managerial controls: Administrative controls with security design and implementation, security policies, and standard operating procedures
-  Operational controls: controls implemented by people instead of systems, security guards, and awareness programs
-  Physical controls: limit physical access, guard shack, fences, locks, and badge readers
+  Technical controls: Controls implemented using technologies and HW/SW systems, OS controls, Firewall and anti-virus, encryption processes, intrusion detection systems.
+  Managerial controls: Administrative controls with security planning, design, and implementation; security policies, and standard operating procedures.
+  Operational controls: controls implemented by people and processes instead of systems, security guards, and awareness programs.
+  Physical controls: Tangible and real-world measures to limit physical access, guard shack, fences, locks, and badge readers.
 
-  Preventive control types: block access, firewall rules, security policy, guard shack checks, door locks
-  Deterrent control types: discourage an intrusion, application splash screens, the threat of demotion, reception desk, and warning signs
-  Detective control types: identify and log an intrusion, collect and review logs, login reports, regularly patrol the property, and motion detectors
+  Preventive control types: proactive measures to deal with security threats and breaches; block access, firewall rules, security policy, guard shack checks, door locks.
+  Deterrent control types: discourage an intrusion, application splash screens, the threat of demotion, reception desk, and warning signs.
+  Detective control types: Monitor and alert an intrusion, collect and review logs, login reports, regularly patrol the property, and motion detectors. Intrusion detection system (IDS).
   Corrective control types: After an event, reverse the impact and minimize downtime by restoring backups, policies for reporting issues, contacting law enforcement, and using a fire extinguisher.
   Compensating control types: Control using other means temporarily, such as a firewall to block or patch the troubled app, separation of duties, guard duties, and a generator for a power outage.
-  Directive control types: display security compliance. Put sensitive files in protected folders, compliance policies and procedures, train users, sign: "Authorized only."
+  Directive control types: often rooted in policy or documentation. Put sensitive files in protected folders, compliance policies and procedures, train users, sign: "Authorized only."
 
   Zero Trust is a security model that operates on the principle that no one, inside or outside, should be trusted by default.
 
@@ -23,31 +23,44 @@ Information system security - protect the devices that hold the data
 
 1.2 The CIA Triad: Non-repudiation, Authentication, Authorization and Accounting, Gap Analysis, Zero Trust, Physical Security, Deception and Disruption
   CIA or AIC Triad refers to Confidentiality, Integrity, and Availability.
-  Confidentiality: To prevent the disclosure of information to unauthorized users, use encryption and Decryption, restrict access controls, and use two-factor authentication.
-  Integrity - Messages can't be modified without detection. Hashing data, digital signatures, and certificates provide proof of integrity, as does non-repudiation.
+  Confidentiality: To prevent the disclosure of information to unauthorized users.
+      Three reasons for confidentiality: protect personal privacy, maintain a business advantage, and achieve regulatory compliance.
+      Five ways to achieve confidentiality: encryption/decryption, restricted access controls, data masking, physical security measures, and training/awareness.
+  Integrity - Verifies the accuracy and trustworthiness of data. Data can't be modified without detection. 
+      Three reasons for integrity: Ensure data accuracy, maintain trust, and ensure system operability.
+      Five Ways to achieve integrity: hashing data, digital signatures, checksums, access controls, and regular audits.
   Availability - Systems and networks must be running at all times. This includes redundancy, fault tolerance, patching to close security holes, and stability.
+      Three reasons for availability: ensuring business continuity, maintaining customer trust, and upholding the organization's reputation. 
 
-  Non-repudiation: Guaranteeing that a specific action or event has taken place and cannot be denied by the parties involved.
-      Proof of integrity using hash for cryptography, proof of origin by authenticating with the private key through encryption.
-      Plaintext -> hash -> encryption (private key).      decryption -> hash
+  Non-repudiation: Focused on providing undeniable proof in digital transactions with digital signatures.
+      Sender: Plaintext -> hash -> encryption (private key).      Receiver: decryption -> hash
+      Three reasons for non-repudation: confirming the authenticity of digital transactions, ensuring integrity, and providing accountability.
 
   AAA: Authentication, Authorization, and Accounting
-  Authentication - Verifying the identity of a user or system. UserID and Password.
-  Authorization -  Defines what actions or resources a user can access based on identification and authentication,
-  Accounting - Tracking user activities and resources. Login time, data sent and received, and logout time.
+  Authentication - Verifying the identity of a user or system. UserID and Password. Two-factor authentication (2FA). Multi-factor authentication (MFA).
+      Five methods for authentication: something you know (knowledge factor), something you have (possession factor), something you are (inherent factor), something you do (action factor), and somewhere you are (location factor).
+      Three reasons for authentication: prevent unauthorized access, protect user data or privacy, and ensure resource validity.
+  Authorization -  Defines permissions and privileges granted to users after they have been authenticated. Rules and policies.
+      Three reasons for authorization: protect sensitive data, maintain system integrity, and create more streamlined user experiences.
+  Accounting - Tracking user activities and resources. 
+      Tracking include: Login and logout time, data sent and received, modifying or deleting files, downloading or installing software, and attempting unauthorized actions on systems or networks.
+      Accouting system should allow for audit trails, maintain regulatory compliance, conduct forensic analysis, perform resource optimization, and achieve user accountability.
+      Three ways for accounting: syslog servers, network analysis tools (wireshark), and Security information and event management systems (SIEMs).
 
   Authenticating systems often use digitally signed certificates to assign to authorized devices.
   Certificate authentication — An organization has a trusted Certificate Authority (CA) to create and verify digitally signed certificates.  
   Authorization models - create abstract groups to assign users and services <=> data and applications.
 
   Gap analysis - Perform research and review to determine where we are and where we want to be.
-  Choosing the framework (i.e., NIST 800-171rev2 or ISO/IEC 27001) for the organization's formal standards.
-  Evaluate people and processes; compare and contrast existing systems.
+      Steps in gap analysis: define the scope, gather data, analyze the data to identify the gaps, develop plan to bridge the gap.
+      Technical gap analysis: Evaluate the company's technical infrastructure.
+      Business gap analysis: Evaluate people and business processes.
+      Choosing the analysis framework (i.e., NIST 800-171rev2 or ISO/IEC 27001) for the organization's formal standards.
 
   Zero Trust—Implies that nothing is inherently trusted, including multi-factor authentication, encryption, system permissions, firewalls, monitoring, and analytics.
   Split the network info functional planes to define security policy for each: physical assets, virtual assets, and cloud assets.
   Data plane - (switches, routers, firewalls) processing, forwarding, trunking, encrypting, NAT frames and packets.
-  Control plane - manages the actions of the data plane; policies, rules, routing tables, session tables, NAT tables.
+  Control plane - framework repsonsible for defining and managing the actions of the data plane; policies, rules, routing tables, session tables, NAT tables.
 
   Adaptive identity - consider the requested resources to apply multiple risk indicators to increase the authentication factor.
   Threat scope reduction - decrease the number of possible entry points
