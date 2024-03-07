@@ -1,7 +1,9 @@
 General Security Concepts - 12%
 
-1.1 Security Controls
-  - Prevent, minimize, and limit the damage
+Information security - protect the data
+Information system security - protect the devices that hold the data
+
+1.1 Security Controls: Measures are implemented to mitigate risks and protect information systems and data confidentiality, integrity, and availability.
   Technical controls: Controls implemented using systems, OS controls, Firewalls and anti-virus
   Managerial controls: Administrative controls with security design and implementation, security policies, and standard operating procedures
   Operational controls: controls implemented by people instead of systems, security guards, and awareness programs
@@ -10,9 +12,11 @@ General Security Concepts - 12%
   Preventive control types: block access, firewall rules, security policy, guard shack checks, door locks
   Deterrent control types: discourage an intrusion, application splash screens, the threat of demotion, reception desk, and warning signs
   Detective control types: identify and log an intrusion, collect and review logs, login reports, regularly patrol the property, and motion detectors
-  Corrective control types: After an event, reverse the impact and minimize downtime. Restoring backups, policies for reporting issues, contact law enforcement, and fire extinguisher.
-  Compensating control types: Control using other means temporarily. Firewall to block or patch the troubled app, separation of duties, guard duties, and generator for power outage.
+  Corrective control types: After an event, reverse the impact and minimize downtime by restoring backups, policies for reporting issues, contacting law enforcement, and using a fire extinguisher.
+  Compensating control types: Control using other means temporarily, such as a firewall to block or patch the troubled app, separation of duties, guard duties, and a generator for a power outage.
   Directive control types: display security compliance. Put sensitive files in protected folders, compliance policies and procedures, train users, sign: "Authorized only."
+
+  Zero Trust is a security model that operates on the principle that no one, inside or outside, should be trusted by default.
 
   [View the Control Types.pdf]
   
@@ -23,23 +27,24 @@ General Security Concepts - 12%
   Integrity - Messages can't be modified without detection. Hashing data, digital signatures, and certificates provide proof of integrity, as does non-repudiation.
   Availability - Systems and networks must be running at all times. This includes redundancy, fault tolerance, patching to close security holes, and stability.
 
-  Non-repudiation: proof of integrity using hash for cryptography, proof of origin by authenticating with the private key through encryption.
+  Non-repudiation: Guaranteeing that a specific action or event has taken place and cannot be denied by the parties involved.
+      Proof of integrity using hash for cryptography, proof of origin by authenticating with the private key through encryption.
       Plaintext -> hash -> encryption (private key).      decryption -> hash
 
   AAA: Authentication, Authorization, and Accounting
-  Authentication - prove user identity with User/password
-  Authorization -  grant access based on identification and authentication,
-  Accounting - Login time, data sent and received, and logout time
+  Authentication - Verifying the identity of a user or system. UserID and Password.
+  Authorization -  Defines what actions or resources a user can access based on identification and authentication,
+  Accounting - Tracking user activities and resources. Login time, data sent and received, and logout time.
 
   Authenticating systems often use digitally signed certificates to assign to authorized devices.
-  Certificate authentication - An org has a trusted Certificate Authority (CA) to create and verify digitally signed certificates.  
+  Certificate authentication — An organization has a trusted Certificate Authority (CA) to create and verify digitally signed certificates.  
   Authorization models - create abstract groups to assign users and services <=> data and applications.
 
   Gap analysis - Perform research and review to determine where we are and where we want to be.
   Choosing the framework (i.e., NIST 800-171rev2 or ISO/IEC 27001) for the organization's formal standards.
   Evaluate people and processes; compare and contrast existing systems.
 
-  Zero Trust - Implies nothing is inherently trusted; multi-factor authentication, encryption, system permissions, firewalls, monitoring and analytics.
+  Zero Trust—Implies that nothing is inherently trusted, including multi-factor authentication, encryption, system permissions, firewalls, monitoring, and analytics.
   Split the network info functional planes to define security policy for each: physical assets, virtual assets, and cloud assets.
   Data plane - (switches, routers, firewalls) processing, forwarding, trunking, encrypting, NAT frames and packets.
   Control plane - manages the actions of the data plane; policies, rules, routing tables, session tables, NAT tables.
@@ -66,14 +71,14 @@ General Security Concepts - 12%
   Change approval process - request forms, define the purpose, the scope, the affected resources, schedule date & time, and manager approval. 
   Ownership - An individual or entity needs to make changes and own the process; The owner manages the updates and ensures the process is followed.
   i.e., Address label printers need upgrading; the Shipping dept owns the process; IT handles the actual change.
-  Stakeholders - who are impacted by the change and may not be obvious. 
+  Stakeholders - who are impacted by the change. 
   i.e., Shipping labels: shipping dept; accounting reports; product delivery timeframes; revenue recognition (CEO visibility)
   Impact analysis - risk value (fix or not fix the issue, breaks something else, or data corruption); not making change (security vulnerability, downtime, and availability)
   Test results: Use the sandbox testing environment before making changes to production, and confirm the backout plan, such as backup systems.
 
-  Allow list vs. Deny list: nothing runs unless approved, very restrictive; anti-virus, anti-malware.
-  Restricted activities: The scope of a change is important; do not change something outside of the scope. Expand the change only if necessary. Determine the next steps.
-  Downtime - When the services & resources are unavailable, switch to a secondary system; the goal is to minimize downtime.
+  Allow list vs. Deny list: Nothing runs unless approved. It is very restrictive; it includes anti-virus and anti-malware.
+  Restricted activities: The scope of a change is essential; do not change something outside of the scope. Expand the change only if necessary. Determine the next steps.
+  Downtime — When the services and resources are unavailable, switch to a secondary system; the goal is to minimize downtime.
   Restarts system, services, or applications
   Legacy applications - beware that they may not be supported anymore, fear of the unknown.
   Dependencies - to update A, it needs to update B. Dependencies may be across platforms.
@@ -85,14 +90,14 @@ General Security Concepts - 12%
   Symmetric encryption uses a single, shared key for both encryption and decryption. It's fast but doesn't scale very well.
   Asymmetric encryption involves two mathematically related keys (private and public keys). The private key is the only key that can decrypt data encrypted with the public key.
 
-  Encrypting Data - Protect data on storage devices by encrypting a full disk, folders, or a single file. Use BitLocker, FileVault, or Windows EFS.
+  Encrypting Data - Protect data on storage devices by encrypting an entire disk, folders, or a single file. Use BitLocker, FileVault, or Windows EFS.
   Database encryption to protect stored data with transparent encryption or record-level encryption.
   Transport encryption by protecting data traversing the network; Encrypting in the app (EX, browsers use HTTPS); VPN (Virtual private network) uses SSL/TLS or IPsec.
-  Encryption algorithms must be agreed upon by both sides (server and client). Consider security level, speed, complexity of implementation, etc.
-  Cryptographic keys - larger length prevents brute-force attacks. Symmetric encryption and Asymmetric encryption.
-  Key Stretching (key strengthening) involves making a weak key stronger by performing multiple processes. The password is hashed. The hash of the password is hashed.
+  Both sides (server and client) must agree upon encryption algorithms. Consider security level, speed, complexity of implementation, etc.
+  Cryptographic keys - larger length prevents brute-force attacks: symmetric and Asymmetric encryption.
+  Key Stretching (key strengthening) involves strengthening a weak key by performing multiple processes. The password is hashed. The hash of the password is hashed.
 
-  Key Exchange: transferring keys is a logistical challenge. Out-of-band (telephone or in-person) vs. in-band (over the network) key exchange.
+  Key Exchange: transferring keys is a logistical challenge — Out-of-band (telephone or in-person) vs. in-band (over the network) key exchange.
   Real-time encryption/decryption is needed for fast security. Share a symmetric session key using asymmetric encryption (session key).
   Session keys are temporary, change often, and need to be unpredictable.
 
@@ -102,15 +107,15 @@ General Security Concepts - 12%
   Key management system: Services are everywhere. Manage all keys from a centralized manager. Manage all keys from one console.
   Secure enclave: hardware processor with real-time memory encryption to securely store data. 
 
-  Obfuscation - The process of making something unclear and hiding info in plain sight. EX: Steganography. Picture, Audio, and Video steganography.
-  Tokenization is the process of replacing sensitive data with a non-sensitive placeholder, which is common with credit card processing. This isn't encrypted or hashed.
-  Data masking is the process of hiding some of the original data and protecting PII. For example, **** 1234 only shows the last four digits of the number's CC or SS.
+  Obfuscation - Making something unclear and hiding info in plain sight. EX: Steganography. Picture, Audio, and Video steganography.
+  Tokenization - Replacing sensitive data with a non-sensitive placeholder, which is common with credit card processing. This isn't encrypted or hashed.
+  Data masking - Hiding some of the original data and protecting PII. For example, **** 1234 only shows the last four digits of the number's CC or SS.
 
   Hashing and Digital Signatures - Hashes represent data as a string of text; they are one-way trips that cannot be recovered or reversed.
   Hash functions should be unique and do not have collision problems. MD5 is a hash with collision.
   Hash is commonly used to verify downloaded files or store passwords. For example, store a salted hash for the password.
   Salted hash is when random data (salt) is added to a password when hashing. The salt is stored with the password. (password + gsEVx) = hash string.
-  Rainbow tables (mapping of all inputs to their hash equivalent) won't work with salted hashes due to added data (salt).
+  Rainbow tables (mapping all inputs to their hash equivalent) won't work with salted hashes due to added data (salt).
   Digital signatures provide integrity, authentication, and non-repudiation. They are signed with a private key and verified with the public key.
 
   Blockchain Technology - distributed ledger to keep track of transactions; Everyone maintains a copy of the ledger; Used in payment processing, supply chain, or digital voting.
