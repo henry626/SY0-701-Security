@@ -66,7 +66,7 @@ Information system security - protect the devices that hold the data
   Threat scope reduction - decrease the number of possible entry points
   Policy-driven access control - combining adaptive identity with a predefined set of rules
   Security zones - trusted vs untrusted zones; internal vs external network; 
-  Policy enforcement point (PEP) - policy decision point, policy engine, policy admin
+  Policy enforcement point (PEP) - Subject/system, policy engine, policy admin, and policy enforcement point.
 
   Physical Security - (i.e., Barricades/Bollards) - prevent access; channel traffic and access point; Warning signs.
   Access control vestibules (i.e., doors/fences) - designed to lock/unlock access to facilities
