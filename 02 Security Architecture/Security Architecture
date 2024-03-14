@@ -15,14 +15,15 @@
   Social Engineering Attacks involve misinformation or disinformation. Fake news creates confusion and division. To elevate fake news, fake accounts, brand impersonation, and impersonated sites are used.
 
 2.3 Memory Injections, Buffer Overflows, Race Conditions, Malicious Updates, OS Vulnerabilities, SQL Injection, Cross-site Scripting, Hardware Vulnerabilities,
-  Memory Injections - 
-  Buffer Overflows - 
-  Race Conditions -   
-  Malicious Updates - 
-  OS Vulnerabilities - 
-  SQL Injection - 
-  Cross-site Scripting - 
-  Hardware Vulnerabilities -
+  Memory Injections - inject malicious code into a running process. DLL injection.
+  Buffer Overflows - overwriting a buffer of memory to execute malicious code.
+  Race Conditions - Time-of-check to time-of-use (TOCTOU).  
+  Malicious Updates - Always update systems for bug fixes and security patches. But not every update is equally secure. Have backups and install from trusted sources.
+  OS Vulnerabilities - Update the OS as soon as possible for bug fixes and security patches. Test before deployment. Have good backups available.
+  SQL Injection - inject code into the SQL query to access the entire DB. EX: "SELECT * FROM users WHERE name = 'Nguyen' OR '1' = '1'"; 1=1 is always TRUE.
+  Cross-site Scripting - XSS. One of the most common web app vulnerabilities. Browser security flaws. XSS commonly uses JavaScript code in the edit box on a webpage.
+      Keep browsers updated, consider disabling Javascript, check input for Javascript code, and never blindly click on links from emails or text messages.
+  Hardware Vulnerabilities—IoT. HWs are controlled by embedded firmware. Manufacturers may delay firmware patches or the End of Life (EOL) of products, including legacy devices and software.
 
 
 2.3 Virtualization Vulnerabilities, Cloud-specific Vulnerabilities, Supply Chain Vulnerabilities, Misconfiguration Vulnerabilities, Mobile Device Vulnerabilities, Zero Day
