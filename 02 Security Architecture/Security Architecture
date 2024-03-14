@@ -27,12 +27,21 @@
 
 
 2.3 Virtualization Vulnerabilities, Cloud-specific Vulnerabilities, Supply Chain Vulnerabilities, Misconfiguration Vulnerabilities, Mobile Device Vulnerabilities, Zero Day
-  Virtualization Vulnerabilities -
-  Cloud-specific Vulnerabilities -
-  Supply Chain Vulnerabilities -
-  Misconfiguration Vulnerabilities -
-  Mobile Device Vulnerabilities -
-  Zero Day -
+  Virtualization Vulnerabilities - Local privilege escalations, command injection, information disclosure. VM escapes to another VM to control the host and other guest VMs.
+  Cloud-specific Vulnerabilities include DoS or DDoS, authentication bypass, directory traversal, remote code execution, web app attacks, Cross-site scripting (XSS), and out-of-bounds Write.
+  Supply Chain Vulnerabilities - Attackers can infect any moving parts along the chain. People falsely trust their suppliers. 
+      Companies use service providers for various IT tasks. Attacking the service providers also indirectly attacks the company. Need security audit of the service provider.
+      Hardware providers also need to be audited for security. Use a trusted supplier base to ensure proper security.
+      Software providers - software updates should be authenticated with their digital signatures. Solar Wind Orion virus gained access to many Fortune 500 companies and federal agencies.
+  Misconfiguration Vulnerabilities: Accidentally providing access through open permissions; unsecured admin accounts or easy-to-hack passwords; use of insecure protocols like telnet, FTP, SMTP, or IMAP.
+      Default settings on apps or devices provide access to the network. Mirai botnet (open sources) checks for IoT device default configurations to gain network access.
+      Open ports and services require a firewall to manage traffic flows. 
+  Mobile Device Vulnerabilities - challenging to secure due to its relatively small size, always in motion, packed with sensitive data, and constantly connected to the internet.
+      Android is rooting, which allows one to gain access to the device's root to install or replace the existing OS or application.
+      Apple iOS jailbreaking is similar to Android rooting.
+      Sideloading malicious apps can circumvent security and bypass any Mobile Device Management (MDM).
+  Zero Day - An attack without a patch or method of mitigation. A race to exploit the vulnerability or create a patch.
+      Common Vulnerabilities and Exposure (CVE) at HTTP://cve.mitre.org
 
 
 2.4 An Overview of Malware, Viruses and Worms, Spyware and Bloatware, Other Malware Types, Physical Attacks, Denial of Service, DNS Attacks, Wireless Attacks
