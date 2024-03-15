@@ -45,12 +45,26 @@
 
 
 2.4 An Overview of Malware, Viruses and Worms, Spyware and Bloatware, Other Malware Types, Physical Attacks, Denial of Service, DNS Attacks, Wireless Attacks
-  An Overview of Malware -
-  Viruses and Worms -
+  An Overview of Malware: Malicious software that gathers information, shows ads, or encrypts data for ransom. 
+      Viruses, worms, ransomware, trojan horses, rootkits, keyloggers, spyware, bloatware, or logic bombs.
+      Malware infects the system through email links, web page pop-ups, drive-by downloads, or worms.
+  Viruses and Worms are malware that can reproduce by executing a program and spreading through the network. You can use Anti-virus and update the virus signatures.
+      Virus types include program viruses, boot sector viruses, script viruses, or macro viruses.
+      Fileless viruses operate in memory but never install in a file or application. Referred to as a stealth attack.
+      Worms are malware that self-replicates and uses the network to spread quickly. Firewalls and IDS/IPS can mitigate worm infestations, but they are useless once the worm gets inside.
+      Wannacry worm is a famous worm that spreads through the network to infect other systems and encrypts the data for ransom.
   Spyware and Bloatware -
-  Other Malware Types -
-  Physical Attacks -
-  Denial of Service -
+      Spyware is malware that spies on you through browser monitoring or keylogging to steal your identity. Anti-virus or anti-malware to detect it. 
+      Bloatware is a type of malware that manufacturers may preload to your system. It causes overall resource usage by slowing down your system.
+  Other Malware Types - Keyloggers capture keystrokes for web login (userID/password) and circumvent encryption protections by capturing keystrokes.
+      The logic bomb waits for a predefined event/time to activate. It is difficult to identify or recover. Constant auditing should include formal change control and electronic monitoring of OS core files.
+      Rootkits modify core system files as part of the kernel. Prevent rootkits by using a secure boot with UEFI.
+  Physical Attacks - Physical access to the system. There should be no open access to the systems. 
+      RFID cloning can duplicate access badges or bank cards. Use Multi-factor authentication (MFA) to prevent RFID attacks.
+      Environmental attacks through power outages, HVAC tempering, or fire suppression.
+  Denial of Service - Force service to fail. DoS can also be a smoke bomb for another attack. 
+      Friendly DoS includes using all available bandwidth to download something, Network DoS from layer-2 loop, or water line breaks.
+      DDoS is a distributed denial-of-service attack perpetrated by many systems from different locations, such as botnets. The Zeus botnet infected over 3.6 million PCs.
   DNS Attacks -
   Wireless Attacks -
 
