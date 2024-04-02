@@ -112,12 +112,22 @@
       restrict access to network devices for normal users or admin users.
       User list of permisions such as Read/Write to files, access to certain network or ports.
       Application allow list or deny list: Allow list is very restrictive and nothing runs unless its on the allow list. Deny list is nothing bad can be executed (ex: anti-virus, anti-malware list)
+
 2.5 Mitigation Techniques, Hardening Techniques, Cloud Infrastructures, Network Infrastructure Concepts
-  Mitigation Techniques -
-  Hardening Techniques -
-  Cloud Infrastructures - 
-  Network Infrastructure Concepts -
-
-
+  Mitigation Techniques - Patching OS or applications. Encryption files or folders (ex: Windows EFS or full disk encryption (FDE).  
+      Monitoring includes aggregate information from devices, built-in sensors for intrusion detection and logs, collectors such as IPS, firewalls, and the Security Info and Event Manager (SIEMs).
+      Configuration enforcement: Each time a device connects, perform an extensive check for the OS patch version, Endpoint detection and response version (EDR), firewall status, and certificate status.
+      Decommissioning - formal policy for storage devices. Recycle or destroy.
+  Hardening Techniques - OS updates/service packs, security patches; user accounts are secured and account limitations; Network access and security; Monitor and secure systems with anti-virus;
+      Encrypt files and folders with Windows Encrypting File System (EFS) or Full disk encryption (FDE); Encrypt all network communication; Use VPN.
+      Endpoint detection and response (EDR) - A different method of threat protection that scales to meet the needs; 
+      Detect a threat with malware signatures and behavioral analysis with machine learning;
+      Investigate the threat using root cause analysis;
+      Respond to the threat by isolate or quarantine the threat, rollback to previous config;
+      Host-based firewall is a personal firewall that runs on every endpoint; Allow or disallow incoming or outgoing traffic; Identify and block unknown processes.
+      Host-based intrusion Prevention System (HIPS) - recognize and block known attacks; Secure OS and app configs; built-in software for endpoint protection.
+      Open ports and services - Close everything except required ports; Next-generation firewall (NGFW) applies rules and block potentially dangerous traffic.
+      Nmap is a great tool for scanning ports and verifying or monitoring ongoing traffic.
+      Remove unnecessary software.
 
 
