@@ -65,23 +65,53 @@
   Denial of Service - Force service to fail. DoS can also be a smoke bomb for another attack. 
       Friendly DoS includes using all available bandwidth to download something, Network DoS from layer-2 loop, or water line breaks.
       DDoS is a distributed denial-of-service attack perpetrated by many systems from different locations, such as botnets. The Zeus botnet infected over 3.6 million PCs.
-  DNS Attacks -
-  Wireless Attacks -
+      An asymmetric threat is when the attacker may have fewer resources than the victim.
+      Use protocols without authentication or checks to amplify traffic data (IE. NTP, DNS, ICMP).
+  DNS Attacks - Spoofing or Poisoning. Modify the DNS server; modify the client host file; send a fake response to a valid DNS request;
+      Domain hijacking by brute force; social engineering the password; gaining access to the email address that manages the account.
+      URL hijacking - Typosquatting or brandjacking of misspelled names or phishing sites.
+  Wireless Attacks - Original wireless standards did not add protection for management frames which can be easily attacked by deauthenticating the attached device to prevent connection to the Wifi.
+      Radio frequency (RF) jamming - Transmit interfering wireless signals; DoS for all devices to wireless communication. 
+      wireless jamming types include constant random bits, reactive jamming; Time to go fox hunting with directional antenna or attenuator.
 
 
 2.4 On-path Attacks, Replay Attacks, Malicious Code, Application Attacks, Cryptographic Attacks, Password Attacks, Indicators of Compromise, Segmentation and Access Control
-  On-path Attacks -
-  Replay Attacks -
-  Malicious Code -
-  Application Attacks - 
-  Cryptographic Attacks -
-  Password Attacks -
-  Indicators of Compromise -
-  Segmentation and Access Control -
-
-
-
-
+  On-path Attacks - AKA man-in-the-middle attack. redirect your traffic.
+      ARP poisoning is an on-path attack on the local IP subnect. ARP has no security or encryption protection.
+      On-path browser attack (AKA main-in-the-browser). malware/trojan does all of the proxy work to capture login info to social websites, finacial websites, etc.
+  Replay Attacks - Network tap, ARP poisoning, malware to steal user login info to replay the session.
+      Pass the hash is when the attacker intercept the login session to the server to steal username and hashed password for replay attack.
+      Header manipulation includes sessions IDs that can be gathered with Wireshark, Kismet, cross-site scripting exploits.
+      Browser cookies and sessions IDs can be userd to get access to the server as the victim.
+      Avoid replay attack with a salt, VPN, or encryption (HTTPS)
+  Malicious Code - Attacks from executable, scripts, SQL injection, macro viruses, worms, Trojan horse, etc.
+      Use anti-malware, firewall, continuous updates and patches.
+  Application Attacks are code injection attacks that come from bad programming. Buffer overflows, SQL injection, HTML, XML, LDAP, etc.
+      Privilege escalation is when attacker exploit bad code to gain complete access to the system as an administrator. 
+      Prevent code injections through code patches to fix vulnerabilities, update anti-virus software, rules for data execution prevention, or use ASLR.
+      Cross-site request forgery such as one-click attack XSRF or CSRF (sea surf).
+  Cryptographic Attacks - Hash Collisions (MD5 encryption) or downgrade attack (SSL stripping).
+      MD5 encryption is vulnerable because of hash collisions; when two or mode data inputs generate the same hash string.
+      Downgrade attack is when the attacker force the systems to downgrade their security through an on-path attack. 
+  Password Attacks - Some apps store passwords as plaintext. Consider hasing the password. Hash fingerprint is unique with no collision.
+      Spraying attack is when attackers use common passwords to gain access to victim accounts.
+      Brute force attack is trying every possible password combination until the hash is matched.
+  Indicators of Compromise (IOC) - An event that indicates an intrusion such as unusual amount of network activity, change to file hash values, 
+      irregular international traffic, DNS data changes, uncommon login patterns, spike of read requests to files.
+      Account lockout - exceeded login attempts, account was adminstratively disabled misteriously.
+      Concurrent session usage - physical location of each session should be geagraphically closed by.
+      Resource consumption - file transfers use bandwidth at unusual time, firewall shows outgoing transfer to oversea IPs
+      Resource inaccessibility - server is down, network disruption, server outage, encrypted data from ransomware, brute force attack.
+      Out-of-cycle logging occurs at an unexpected time. View firewall log activity.
+      Missing logs is when attackers delete logs of activities they performed on the systems.
+  Segmentation and Access Control - Physical, logical or virtual segmentation.
+      Deletgate high-bandwidth apps to seperate networks to prevent interference with other system activities.
+      Enable security to prevent users from talking directly to the database servers, or communicate through encrypted protocols.
+      Access control lists (ACL) - allow or disallow traffic; restrict access to network devices.
+      allow or disallow traffic by groupings of categoties such as source IP, destination IP, port number, time of day, applications, etc.
+      restrict access to network devices for normal users or admin users.
+      User list of permisions such as Read/Write to files, access to certain network or ports.
+      Application allow list or deny list: Allow list is very restrictive and nothing runs unless its on the allow list. Deny list is nothing bad can be executed (ex: anti-virus, anti-malware list)
 2.5 Mitigation Techniques, Hardening Techniques, Cloud Infrastructures, Network Infrastructure Concepts
   Mitigation Techniques -
   Hardening Techniques -
