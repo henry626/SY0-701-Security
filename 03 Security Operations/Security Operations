@@ -2,8 +2,18 @@
 
 3.1 Network Infrastructure Concepts, Infrastructure Considerations
   Cloud Infrastructure - IaaS, PaaS, SaaS, etc.  Cloud security responsibility matrix.
-      
-  Network Infrastructure Concepts -
+      Hybrid considerations: A hybrid cloud with more than one public or private cloud, network protection mismatches for authentication across platforms, and different security monitoring.
+      Third-party vendors in the cloud: Ongoing vendor risk assessments, including third-party impact for incident response and constant monitoring.
+      Infrastructure as code: Describe an infrastructure to define servers, networks, and applications as code. Create repository versions and use descriptive comments for easy maintenance.
+      Serverless architecture: Function as a Service (FaaS); when apps are separated into individual autonomous functions, run in a stateless container; 
+      Microservices and APIs: API is the glue for the microservices; they are scalable, resilient, and have built-in security and compliance.
+  Network Infrastructure Concepts - Physical isolation,
+      Physical isolation: devices are physically separated; Customer A on one device and B on another device; Front-end web server on one rack and back-end DB on another rack.
+      Virtual Local Area Networks (VLANs) separate networks logically instead of physically. Communication between VLANs through L3 device/router.
+      Software Defined Networking (SDN) - Networking devices have different functional planes of operation, split the functions into separate logical units; 
+        Infrastructure layer / Data plane - process the network frames and packets; forwarding, trunking, encrypting, NAT
+        Control layer / Control plane - manages the data plane; routing tables, session tables, NAT tables
+        Application layer / Management plane - Configure and manage the device; SSH, browser, API
   Other Infrastructure Concepts - 
   Infrastructure Considerations  -
 
