@@ -14,7 +14,13 @@
         Infrastructure layer / Data plane - process the network frames and packets; forwarding, trunking, encrypting, NAT
         Control layer / Control plane - manages the data plane; routing tables, session tables, NAT tables
         Application layer / Management plane - Configure and manage the device; SSH, browser, API
-  Other Infrastructure Concepts - 
+  Other Infrastructure Concepts - Attacks can happen anywhere, on-premises or cloud-based.
+      On-premises: You have full control; on-site IT team can manage security better and maintain uptime and availability;
+      Centralized vs. decentralized. A centralized approach provides correlated alerts, consolidated log file analysis, and comprehensive system status. But it has a single point of failure.
+      Virtualization is where each VM machine runs an operating system, and all share the same hardware.
+      Virtualization => Container.  Several containers (dockers) run on an operating system installed on one hardware. Containers are run in a sandbox to isolate them from each other.
+      IoT (Internet of Things) - Sensors, Smart devices, Wearable technology, Facility automation (HVAC). These IoT may have weak security protection that may cause problems to your network.
+      RTOS and embedded systems also need security protection.
   Infrastructure Considerations  -
 
 
