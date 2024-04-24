@@ -15,18 +15,37 @@
         Control layer / Control plane - manages the data plane; routing tables, session tables, NAT tables
         Application layer / Management plane - Configure and manage the device; SSH, browser, API
   Other Infrastructure Concepts - Attacks can happen anywhere, on-premises or cloud-based.
-      On-premises: You have full control; on-site IT team can manage security better and maintain uptime and availability;
+      On-premises: You have complete control; the on-site IT team can manage security better and maintain uptime and availability;
       Centralized vs. decentralized. A centralized approach provides correlated alerts, consolidated log file analysis, and comprehensive system status. But it has a single point of failure.
       Virtualization is where each VM machine runs an operating system, and all share the same hardware.
       Virtualization => Container.  Several containers (dockers) run on an operating system installed on one hardware. Containers are run in a sandbox to isolate them from each other.
       IoT (Internet of Things) - Sensors, Smart devices, Wearable technology, Facility automation (HVAC). These IoT may have weak security protection that may cause problems to your network.
       RTOS and embedded systems also need security protection.
-  Infrastructure Considerations  -
-
+  Infrastructure Considerations  - Availability, Resilience, Cost, Responsiveness, Scalability, ease of deployment, risk transference, ease of recovery, patch availability, power and computing.
+      Availability—System uptime is a balancing act between security and availability, monitoring, and redundant systems.
+      Resilience - Something will happen; can you recover quickly? Mean time to repair (MTTR); find the root cause; replacement HW; software patch; redundant systems
+      Cost—How much money is required for initial installation, ongoing maintenance, replacement or repair costs, and tax implications?
+      Responsiveness - request information, speed is an important metric
+      Scalability - quickly and easily increase or decrease capacity; resource challenge; Also include security monitoring.
+      Ease of deployment - App has many moving parts (server, DB, firewall, etc.), and processes (HW resources, cloud budget, change control). Essential to consider during the engineering phase
+      Risk Transference: Methods to minimize risk, cybersecurity insurance, recovering internal losses, and protecting against customer legal issues.
+      Ease of recovery - Time is money; how quickly can you recover? Malware infection.
+      Patch availability - Bug fixes, security updates, latest version check, 
+      Inability to patch - This occurs frequently with embedded systems (HVAC controls, time clocks, etc.).
+      Power - Lost of power, backup services (UPS - Uninterruptible power supply), generators.
 
 3.2 Secure Infrastructures, Intrusion Prevention, Network Appliances, Port Security, Firewall Types, Secure Communication
-  Secure Infrastructures -
-  Intrusion Prevention -
+  Secure Infrastructures - Device placement, security zones, attack surface, connectivity
+      Device placement - Firewalls, separate trusted from untrusted, security checks; Honeyports, jump server, load balancers, sensors.
+      Security zones - zone-based security with IP address ranges: Trusted versus Untrusted, internal versus external, severs versus databases.
+      Attack surfaces—how many ways into your network? Application code, open ports, authentication process, human error. Minimize the surface by code auditing, blocking ports, and monitoring network traffic.
+      Connectivity - Everything contributes to security, secure network cabling, app-level encryption, network-level encryption through IPsec tunnels, VPN connections.
+  Intrusion Prevention System (IPS) - It watches network traffic and intrusions from buffer overflows or cross-site scripting vulnerabilities. Detection versus Prevention.
+      Intrusion Detection System (IDS) - alarm or alert
+      Prevention - stop it before it gets into the network.
+      Failure modes - Fail-open is when the system fails, and data continues to flow. Fail-closed is when the system fails, and data does not flow. Fail-open is preferred to maintain the network.
+      Active monitoring - The system is connected inline, and data can be blocked in real-time as it passes by; intrusion prevention is commonly active
+      Passive monitoring—A copy of the network traffic is examined using a tap or port monitor; data cannot be blocked in real-time; intrusion detection is commonly passive.
   Network Appliances -
   Port Security -
   Firewall Types -
