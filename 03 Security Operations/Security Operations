@@ -46,16 +46,53 @@
       Failure modes - Fail-open is when the system fails, and data continues to flow. Fail-closed is when the system fails, and data does not flow. Fail-open is preferred to maintain the network.
       Active monitoring - The system is connected inline, and data can be blocked in real-time as it passes by; intrusion prevention is commonly active
       Passive monitoring—A copy of the network traffic is examined using a tap or port monitor; data cannot be blocked in real-time; intrusion detection is commonly passive.
-  Network Appliances -
-  Port Security -
-  Firewall Types -
-  Secure Communication -
-
+  Network Appliances - Jump server, Proxies
+      Jump server: Access secure network zones from outside the network using a highly secured device. Use SSH / Tunnel / VPN to connect to the jump server. This is a significant security concern.
+      Proxies: Sits between the users and the external network. Useful for caching info, access control, URL filtering, and content scanning. Explicit and transparent proxies.
+      Application proxies: NAT (Network address translation) is an example of a simple proxies. Most proxies in use are application proxies.
+      Forward proxies pass user requests to the Internet. Reverse proxies receive requests from the Internet and pass them to internal servers (Web or DB servers).
+      Open proxy is a third-party uncontrolled proxy. This can be a significant security concern.
+      Balancing the load network devices distribute the load to multiple servers; large-scale implementations like server farms; fault tolerance through redundancy. 
+      Active load balancing is configurable load, TCIP offload (protocol overhead), SSL offload (encryption/decryption), caching (fast response), prioritization (QoS), and Content switching (app-centric balancing).
+      Sensors and collectors: aggregate information from network devices such as SIEM (Security Information Event Manager)
+  Port Security: Authenticate users through the Extensible Authentication Protocol (EAP), which integrates with 802.1X (the IEEE standard for authentication).
+      IEEE 802.1X and EAP: Supplicant (the client), Authenticator (the device that provides access), Authentication server (validates the client credentials).
+  Firewall Types: Standard issue, control the flow of network traffic, control of inappropriate content, protection against evil.
+      Network-based firewalls: filter traffic by port number or application (OSI layer 4 versus OSI layer 7); encrypt traffic like VPN; 
+      UTM (all-in-one security appliance): Unified Treat Management or web security gateway; URL filter / content inspection; malware inspection; spam filter; router, switch, firewall, VPN endpoint.
+      UTM devices operate at OSI layer 4.
+      Next-generation firewall (NGFW): operates at OSI layer 7; application layer gateway; deep packet inspection; requires some advanced decodes for every packet.
+      NGFW can control traffic flows based on the applications (MS SQL server, Twitter, YouTube). Intrusion Prevention systems (IPS) with specific application and content filtering.
+      Web application firewall (WAF) - applies rules to HTTP/HTTPS conversations; allow or deny based on expected input; SQL injection.
+  Secure Communication - VPN, SD-WAN, SASE
+      Virtual Private Networks (VPN): encrypted data traversing a public network; concentrator (encrypt/decryption access device; HW-based or SW-based options available.
+      SSL/TLS VPN (Secure Sockets layer VPN): use SSL/TLS protocol tcp/443. 
+      SD-WAN: Software-defined networking in a Wide Area Network; built for the cloud; cloud-baed apps communicate directly to the cloud and do not need to hop through a central point. Does not adequately address security concerns.
+      Secure Access Service Edge (SASE): next generation VPN; update secure access for cloud services; streamlined and automatic. Complete network and security solution; requires planning and implementation.
 
 3.3 Data Types and Classifications, States of Data, Protecting Data
-  Data Types and Classifications -
-  States of Data - 
-  Protecting Data -
+  Data Types and Classifications - Regulated, trade secret, intellectual property.
+      Regulated data: Information governed by government laws and statutes or managed by a third party. It includes legal, financial, Personal identifier, and Protected Health information.    
+      Trade Secret: Secret formulas or algorithms, often unique to an organization.  
+      Intellectual property: copyright and trademark restrictions to highly visible products.
+      Data types can be human-readable (clear texts or numbers) or non-human readable (encoded data, barcodes, etc)
+      Data classifications: sensitive, confidential, public/unclassified, private/classified/restricted, critical
+  States of Data - Data at rest, Data in transit, Data in use, Data sovereignty, Geolocation.
+      Data at rest: If data is on a storage device, you may want to encrypt it or apply access permissions (access control list).
+      Data in transit: data transmitted over the network. To protect the data, you may want to apply network-based protection (firewall or IPS) or provide transport encryption (TLS or IPsec).
+      Data in use: Data is actively processed in memory and is unencrypted. A very attractive option to capture this data for malicious intent.
+      Data sovereignty: Data residing in a country is subject to the laws of that country. Laws may prohibit where data is stored. General Data Protection Regulation (GDPR).
+      Geolocation: Use location details (provided by GPS or mobile providers) to manage data access based on predefined secured or unsecured locations (inside or outside the buildings).
+  Protecting Data - Geographic Restrictions, protecting data, Encryption/Decryption, Hashing, Obfuscation, data masking, tokenization, segmentation, permission restrictions.
+      Geographic restrictions: network location or geolocation to determine a user's location to do geofencing.
+      Protecting data: A primary job task; Data is everywhere(storage drives, on the network or cloud, or in a CPU); Need security policies for Encryption/Decryption and Access Control for data permissions.
+      Encryption/Decryption: Encrypt info into unreadable data; decode encrypted text back to readable text.
+      Hashing: representing data as a short string of text. This is a one-way trip; you cannot unhash a string. No collision; Use as a digital signature.
+      Obfuscation: take perfectly readable code and turn in into nonsense; help prevent the search for security holes.
+      Data masking: a type of obfuscation to protect PII with substitution, shuffling, or masking out with asterisks like bank card info or ID/password text.
+      Tokenization: replace sensitive data with a non-sensitive placeholder, common with credit card processing. This isn't encryption or hashing.
+      Segmentation: separate the data to store it in different locations; requires compromising all the DB sites to gain successfully useful information.
+      Permission restriction: control access to an account, The authentication process, and Permissions after login.
 
 3.4 Resiliency, Capacity Planning, Recovery Testing, Backups, Power Resiliency
   Resiliency -
